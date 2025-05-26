@@ -225,7 +225,7 @@ function Login() {
         {/* Forgot Password link above Login button */}
         <p
           className="mb-4 text-sm text-blue-600 cursor-pointer hover:underline text-center"
-          onClick={() => navigate("/forgot-password")}
+          onClick={() => navigate("/forgot-password",{ state: { email } })}
         >
           Forgot Password?
         </p>
